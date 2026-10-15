@@ -1,0 +1,40 @@
+{
+  "sender": {
+    "MAIL_SNAME": "王小明",
+    "MAIL_SPHONE": "0912345678",
+    "MAIL_SADD_TYPE": "001",
+    "MAIL_SADD_CITY": "臺北市",
+    "MAIL_SADD_AREA": "中正區",
+    "MAIL_SADD_ZIP": "100",
+    "MAIL_SADD_ROAD": "忠孝西路一段",
+    "MAIL_SADD_OTHER": "1號",
+    "MAIL_SEMAIL": "sender@example.com"
+  },
+  "receiver": {
+    "MAIL_RNAME": "陳小華",
+    "MAIL_RPHONE": "0987654321",
+    "MAIL_RADD_TYPE": "001",
+    "MAIL_RADD_CITY": "新北市",
+    "MAIL_RADD_AREA": "板橋區",
+    "MAIL_RADD_ZIP": "220",
+    "MAIL_RADD_ROAD": "中山路一段",
+    "MAIL_RADD_OTHER": "161號",
+    "MAIL_RADD_OTHER002": "",
+    "MAIL_RADD_OTHER003": "",
+    "MAIL_RADD_OTHER004": "",
+    "MAIL_RADD_OTHER005": ""
+  },
+  "content": {
+    "MAIL_CONTENTS_NO": "6",
+    "MAIL_CONTENTS": "",
+    "MAIL_PACKAGE_SIZE": "00G",
+    "MAIL_COMMENT": "書籍兩本",
+    "MAIL_UNDELIVER_OPTNO": "001",
+    "MAIL_RETURN_TYPE": "001",
+    "MAIL_RETURN_CITY": "",
+    "MAIL_RETURN_AREA": "",
+    "MAIL_RETURN_ZIP": "",
+    "MAIL_RETURN_ROAD": "",
+    "MAIL_RETURN_OTHER": ""
+  }
+}
