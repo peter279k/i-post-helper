@@ -125,21 +125,6 @@ pdf_path = download_shipping_pdf(
 | `MAIL_UNDELIVER_OPTNO` (if undeliverable) | `001` return to sender (return postage charged), `002` discard |
 | `MAIL_RETURN_TYPE` (return address) | `001` sender's address, `004` original sending i-Box, `003` other address (also set the `MAIL_RETURN_*` fields) |
 
-## Flow
-
-| # | Request | Description | Token sour[IL and URL of `/Mail/IBoxMailEdit`; if `saver` is omitted, `responses/<time>/` is created automatically |
-| `.run(sender_data, receiver_data, content_data)` | Runs steps 3–8 in order and returns the completion page HTML |
-| `.check_sender(data)` / `.check_receiver(data)` / `.check_content(data)` | Runs step 3 / 4 / 5 on its own and returns the server's JSON result |
-| `.submit_details_check()` | Step 6; returns the confirm-details page HTML |
-| `.check_send_mail_info(details_html)` | Step 7 |
-| `.submit_ship_completed(details_html)` | Step 8; returns the completion page HTML |
-| `.build_mail_obj(step)` | Builds the `MailObj` for a step (`"sender"` / `"receiver"` / `"content"`), useful for inspecting what will be sent |
-| `.completed_url` | Request URL of step 8 (used as the Referer when downloading the PDF) |
-| `collect_fields(form, data)` | Mimics jQuery `serializeObject`: collects form fields keyed by `name` |
-| `encode_mail_obj(mail_obj)` | Encodes a `MailObj` into `Base64Data` |
-| `ResponseSaver(out_dir=None, verbose=True)` | Saves responses; `.save(resp, name)` saves text, `.save_bytes(data, name, ext)` saves binary, `.saved` lists the saved files |
-| `EzpostSubmitError` | HTTP error, or the server returned `success: false` |
-
 ### ezpost_pdf_download
 
 | Name | Description |
