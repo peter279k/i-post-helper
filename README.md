@@ -55,7 +55,10 @@ python ezpost_form_submit.py
 | `--out-dir <folder>` | Response output folder; default `responses/<date_time>/` |
 | `--pdf-out <file>` | Extra path to save the label PDF to (by default it is saved only in the response folder) |
 | `--no-pdf` | Do not download the label PDF |
-ce |
+
+### Flows
+
+| Step | Request Action | Page Name | Comment |
 |---|---|---|---|
 | 1 | `GET /Mail/SingleShipRule` | Terms page | — |
 | 2 | `POST /Mail/IBoxMailEdit` | Accept the terms and open the create-order page | `form#form-Upload` on the terms page |
